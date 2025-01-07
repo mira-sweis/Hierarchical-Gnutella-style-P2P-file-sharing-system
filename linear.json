@@ -1,0 +1,34 @@
+{
+    "super_peers": [
+      { "peer_id": "SP1", "port": 7001, "neighbors": ["SP2"], "leaf_nodes": ["L1"] },
+      { "peer_id": "SP2", "port": 7002, "neighbors": ["SP1", "SP3"], "leaf_nodes": ["L2"] },
+      { "peer_id": "SP3", "port": 7003, "neighbors": ["SP2", "SP4"], "leaf_nodes": ["L3", "L4", "L5"] },
+      { "peer_id": "SP4", "port": 7004, "neighbors": ["SP3", "SP5"], "leaf_nodes": ["L6", "L7"] },
+      { "peer_id": "SP5", "port": 7005, "neighbors": ["SP4", "SP6"], "leaf_nodes": ["L8"] },
+      { "peer_id": "SP6", "port": 7006, "neighbors": ["SP5", "SP7"], "leaf_nodes": ["L9", "L10"] },
+      { "peer_id": "SP7", "port": 7007, "neighbors": ["SP6", "SP8"], "leaf_nodes": ["L11", "L12"] },
+      { "peer_id": "SP8", "port": 7008, "neighbors": ["SP7", "SP9"], "leaf_nodes": ["L13"] },
+      { "peer_id": "SP9", "port": 7009, "neighbors": ["SP8", "SP10"], "leaf_nodes": ["L14"] },
+      { "peer_id": "SP10", "port": 7010, "neighbors": ["SP9"], "leaf_nodes": ["L15", "L16", "L17"] }
+    ],
+    "leaf_nodes": [
+    { "node_id": "L1", "port": 6001, "connected_super_peer": "SP1", "files": ["file1.txt", "file2.txt"] },
+    { "node_id": "L2", "port": 6002, "connected_super_peer": "SP2", "files": ["file3.txt"] },
+    { "node_id": "L3", "port": 6003, "connected_super_peer": "SP3", "files": ["file4.txt"] },
+    { "node_id": "L4", "port": 6004, "connected_super_peer": "SP3", "files": ["file5.txt"] },
+    { "node_id": "L5", "port": 6005, "connected_super_peer": "SP3", "files": ["file6.txt", "file7.txt"] },
+    { "node_id": "L6", "port": 6006, "connected_super_peer": "SP4", "files": ["file8.txt"] },
+    { "node_id": "L7", "port": 6007, "connected_super_peer": "SP4", "files": ["file9.txt"] },
+    { "node_id": "L8", "port": 6008, "connected_super_peer": "SP5", "files": ["file10.txt"] },
+    { "node_id": "L9", "port": 6009, "connected_super_peer": "SP6", "files": ["file11.txt"] },
+    { "node_id": "L10", "port": 6010, "connected_super_peer": "SP6", "files": ["file12.txt"] },
+    { "node_id": "L11", "port": 6011, "connected_super_peer": "SP7", "files": ["file13.txt"] },
+    { "node_id": "L12", "port": 6012, "connected_super_peer": "SP7", "files": ["file14.txt"] },
+    { "node_id": "L13", "port": 6013, "connected_super_peer": "SP8", "files": ["file15.txt", "file16.txt"] },
+    { "node_id": "L14", "port": 6014, "connected_super_peer": "SP9", "files": ["file17.txt"] },
+    { "node_id": "L15", "port": 6015, "connected_super_peer": "SP10", "files": ["file18.txt"] },
+    { "node_id": "L16", "port": 6016, "connected_super_peer": "SP10", "files": ["file19.txt"] },
+    { "node_id": "L17", "port": 6017, "connected_super_peer": "SP10", "files": ["file20.txt"] }
+  ]
+  }
+  
